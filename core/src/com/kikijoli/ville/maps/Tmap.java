@@ -223,7 +223,7 @@ public class Tmap implements Screen {
         addMerchant();
         addMerchant();
 
-        for (int i = 0; i < 200; i++) {
+        for (int i = 0; i < 50; i++) {
             addPerson();
         }
     }
@@ -243,7 +243,7 @@ public class Tmap implements Screen {
 
     private void addPerson() {
         Npc p = new Npc(Constantes.TILESIZE, Constantes.TILESIZE);
-        House home = new House(Constantes.TILESIZE * (int) (Math.random() * 100), Constantes.TILESIZE * (int) (Math.random() * 100));
+        House home = new House(Constantes.TILESIZE * (int) (Math.random() * 20), Constantes.TILESIZE * (int) (Math.random() * 20));
         p.home = home;
         p.buisiness = new PersonBusinessShopping(p);
         EntiteManager.addEntite(home);
